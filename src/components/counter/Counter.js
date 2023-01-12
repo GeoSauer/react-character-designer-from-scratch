@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Counter() {
-    return (
-        
-    )
+  return <div>counter</div>;
 }
 
-export default Counter
+export default Counter;

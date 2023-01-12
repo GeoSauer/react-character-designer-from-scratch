@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Catchphrases() {
-    return (
-        
-    )
+  return <div>Catchphrases</div>;
 }
 
-export default Catchphrases
+export default Catchphrases;

@@ -1,9 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
-function Header() {
-    return (
-        
-    )
+export default function Header() {
+  return <header>Create you a dang character already!</header>;
 }
-
-export default Header

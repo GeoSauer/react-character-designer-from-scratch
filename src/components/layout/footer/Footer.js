@@ -1,9 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './Footer.css';
 
-function Footer() {
-    return (
-        
-    )
+export default function Footer() {
+  return <footer>Created by Geo in 2023</footer>;
 }
-
-export default Footer
