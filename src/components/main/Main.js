@@ -12,13 +12,30 @@ export default function Main() {
   const [body, setBody] = useState('hawaiian-shirt');
   const [pants, setPants] = useState('bottom');
   const [phrase, setPhrase] = useState([]);
+  const [headCount, setHeadCount] = useState(0);
+  const [bodyCount, setBodyCount] = useState(0);
+  const [pantsCount, setPantsCount] = useState(0);
 
   return (
     <main>
       <section className="container">
         <div className="left">
-          <Controls {...{ head, setHead, body, setBody, pants, setPants, phrase, setPhrase }} />
-          <Counter />
+          <Controls
+            {...{
+              head,
+              setHead,
+              body,
+              setBody,
+              pants,
+              setPants,
+              phrase,
+              setPhrase,
+              setHeadCount,
+              setBodyCount,
+              setPantsCount,
+            }}
+          />
+          <Counter {...{ headCount, bodyCount, pantsCount }} />
           <Catchphrases {...{ phrase }} />
         </div>
         <div className="right">

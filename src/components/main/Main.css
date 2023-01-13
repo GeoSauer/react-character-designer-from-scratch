@@ -1,6 +1,6 @@
 main {
   /* TODO find a rad background image */
-  background-color: antiquewhite;
+  background-color: var(--color4);
 }
 
 .container {

@@ -2,7 +2,18 @@ import React, { useState } from 'react';
 
 import './Controls.css';
 
-export default function Controls({ head, setHead, body, setBody, pants, setPants, setPhrase }) {
+export default function Controls({
+  head,
+  setHead,
+  body,
+  setBody,
+  pants,
+  setPants,
+  setPhrase,
+  setHeadCount,
+  setBodyCount,
+  setPantsCount,
+}) {
   const [phraseInput, setPhraseInput] = useState('');
 
   const submitPhrase = () => {
@@ -10,9 +21,24 @@ export default function Controls({ head, setHead, body, setBody, pants, setPants
     setPhraseInput('');
   };
 
-  const newHead = (event) => setHead(event.target.value);
-  const newBody = (event) => setBody(event.target.value);
-  const newPants = (event) => setPants(event.target.value);
+  const newHead = (event) => {
+    setHead(event.target.value);
+    setHeadCount((currentState) => {
+      return currentState + 1;
+    });
+  };
+  const newBody = (event) => {
+    setBody(event.target.value);
+    setBodyCount((currentState) => {
+      return currentState + 1;
+    });
+  };
+  const newPants = (event) => {
+    setPants(event.target.value);
+    setPantsCount((currentState) => {
+      return currentState + 1;
+    });
+  };
 
   return (
     <div className="editor">
