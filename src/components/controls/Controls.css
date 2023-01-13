@@ -1,0 +1,24 @@
+button {
+  display: block;
+}
+
+.editor,
+button,
+select,
+input,
+label {
+  margin-left: 20px;
+  width: 70%;
+}
+
+.form-control {
+  margin-top: 20px;
+}
+
+label {
+  cursor: default;
+  display: block;
+  left: 0;
+  text-transform: uppercase;
+  top: 0;
+}

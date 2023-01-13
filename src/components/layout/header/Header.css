@@ -1,6 +1,7 @@
 header {
   align-items: center;
   background-color: var(--color5);
+  cursor: default;
   display: flex;
   font-size: 2em;
   height: 60px;

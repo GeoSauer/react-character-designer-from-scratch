@@ -10,11 +10,15 @@ main {
 .left,
 .right {
   align-items: center;
-  /* TODO remove border */
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: flex-start;
   width: 100%;
+}
+
+div {
+  /* TODO remove border */
+  border: red 1px solid;
+  display: block;
 }

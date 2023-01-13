@@ -2,6 +2,7 @@ footer {
   align-items: center;
   background-color: var(--color5);
   bottom: 0;
+  cursor: default;
   display: flex;
   font-size: 1.5em;
   height: 60px;

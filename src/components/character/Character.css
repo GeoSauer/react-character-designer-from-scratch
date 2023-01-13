@@ -15,9 +15,3 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-div {
-  /* TODO remove border */
-  border: 1px solid red;
-  display: block;
-}
