@@ -2,9 +2,10 @@ import React from 'react';
 
 import './Controls.css';
 
-export default function Controls({ head, setHead, body, setBody }) {
+export default function Controls({ head, setHead, body, setBody, pants, setPants }) {
   const newHead = (event) => setHead(event.target.value);
   const newBody = (event) => setBody(event.target.value);
+  const newPants = (event) => setPants(event.target.value);
 
   return (
     <div className="editor">
@@ -26,10 +27,10 @@ export default function Controls({ head, setHead, body, setBody }) {
       </div>
       <div className="form-control">
         <label htmlFor="pants">Pants</label>
-        <select>
-          <option>Pants 1</option>
-          <option>Pants 2</option>
-          <option>Pants 3</option>
+        <select value={pants} onChange={newPants}>
+          <option value="bottom">Stonks</option>
+          <option value="lady-legs">Strut</option>
+          <option value="legs">Agile</option>
         </select>
       </div>
       <div className="form-control">
