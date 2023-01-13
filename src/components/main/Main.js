@@ -9,17 +9,18 @@ import './Main.css';
 
 export default function Main() {
   const [head, setHead] = useState('chewbacca');
+  const [body, setBody] = useState('hawaiian-shirt');
 
   return (
     <main>
       <section className="container">
         <div className="left">
-          <Controls {...{ head, setHead }} />
+          <Controls {...{ head, setHead, body, setBody }} />
           <Counter />
           <Catchphrases />
         </div>
         <div className="right">
-          <Character {...{ head }} />
+          <Character {...{ head, body }} />
         </div>
       </section>
     </main>
