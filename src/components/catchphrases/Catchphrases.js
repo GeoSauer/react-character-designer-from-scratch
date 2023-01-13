@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './Catchphrases.css';
+import '../controls/Controls';
 
 export default function Catchphrases() {
-  return <div>Catchphrases</div>;
+  return <div className="catchphrases">Catchphrases</div>;
 }

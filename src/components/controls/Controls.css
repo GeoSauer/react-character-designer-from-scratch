@@ -1,8 +1,17 @@
 button {
+  background-color: var(--color1);
+  border: none;
+  border-radius: 20px;
+  color: var(--color6);
   display: block;
+  font-weight: 700;
+  height: 2em;
+  margin-top: 5px;
 }
 
 .editor,
+.counter,
+.catchphrases,
 button,
 select,
 input,
@@ -15,9 +24,15 @@ label {
   margin-top: 20px;
 }
 
+input,
+select {
+  background-color: var(--color6);
+}
+
 label {
   cursor: default;
   display: block;
+  font-weight: 700;
   left: 0;
   text-transform: uppercase;
   top: 0;
