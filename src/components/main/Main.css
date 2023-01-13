@@ -16,9 +16,3 @@ main {
   justify-content: flex-start;
   width: 100%;
 }
-
-div {
-  /* TODO remove border */
-  border: red 1px solid;
-  display: block;
-}

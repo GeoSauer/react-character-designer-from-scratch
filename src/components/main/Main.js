@@ -11,14 +11,15 @@ export default function Main() {
   const [head, setHead] = useState('chewbacca');
   const [body, setBody] = useState('hawaiian-shirt');
   const [pants, setPants] = useState('bottom');
+  const [phrase, setPhrase] = useState([]);
 
   return (
     <main>
       <section className="container">
         <div className="left">
-          <Controls {...{ head, setHead, body, setBody, pants, setPants }} />
+          <Controls {...{ head, setHead, body, setBody, pants, setPants, phrase, setPhrase }} />
           <Counter />
-          <Catchphrases />
+          <Catchphrases {...{ phrase }} />
         </div>
         <div className="right">
           <Character {...{ head, body, pants }} />

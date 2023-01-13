@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Controls.css';
 
-export default function Controls({ head, setHead, body, setBody, pants, setPants }) {
+export default function Controls({ head, setHead, body, setBody, pants, setPants, setPhrase }) {
+  const [phraseInput, setPhraseInput] = useState('');
+
+  const submitPhrase = () => {
+    setPhrase((currentState) => [...currentState, phraseInput]);
+    setPhraseInput('');
+  };
+
   const newHead = (event) => setHead(event.target.value);
   const newBody = (event) => setBody(event.target.value);
   const newPants = (event) => setPants(event.target.value);
+  const newPhrase = (event) => setPhrase(event.target.value);
 
   return (
     <div className="editor">
@@ -35,8 +43,13 @@ export default function Controls({ head, setHead, body, setBody, pants, setPants
       </div>
       <div className="form-control">
         <label htmlFor="catchphrase">Add a catch phrase</label>
-        <input type="text" />
-        <button>ADD</button>
+        <input
+          type="text"
+          value={phraseInput}
+          onChange={(event) => setPhraseInput(event.target.value)}
+          required
+        />
+        <button onClick={submitPhrase}>ADD</button>
       </div>
     </div>
   );

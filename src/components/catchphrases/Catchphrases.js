@@ -3,13 +3,13 @@ import React from 'react';
 import '../controls/Controls';
 import './Catchphrases.css';
 
-export default function Catchphrases() {
+export default function Catchphrases({ phrase }) {
   return (
     <div className="catchphrases-container">
       <ul className="catchphrases">
-        <li>dhgdf</li>
-        <li>hdh</li>
-        <li>hdh</li>
+        {phrase.map((phrases) => {
+          return <li key={phrases}>{phrases}</li>;
+        })}
       </ul>
     </div>
   );
