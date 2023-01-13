@@ -5,13 +5,12 @@
   width: 200px;
 }
 
-/* TODO figure out how to do this part */
-/* element.style {
-    background-image: url(./something-head.png);
-} */
-
-.display {
+img {
+  width: 190px;
+  height: 200px;
+}
+/* .display {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */

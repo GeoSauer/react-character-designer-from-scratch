@@ -2,15 +2,17 @@ import React from 'react';
 
 import './Controls.css';
 
-export default function Controls() {
+export default function Controls({ head, setHead }) {
+  const newHead = (event) => setHead(event.target.value);
+
   return (
     <div className="editor">
       <div className="form-control">
         <label htmlFor="head">Head</label>
-        <select>
-          <option>Head 1</option>
-          <option>Head 2</option>
-          <option>Head 3</option>
+        <select value={head} onChange={newHead}>
+          <option value="chewbacca">Dog</option>
+          <option value="shrek">Onion</option>
+          <option value="sonic">Pangolin</option>
         </select>
       </div>
       <div className="form-control">
