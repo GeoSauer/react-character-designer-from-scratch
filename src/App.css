@@ -6,7 +6,7 @@ body {
   --color3: #fee440;
   --color4: #00bbf9;
   --color5: #00f5d4;
-  --color6: rgb(188, 188, 188);
+  --color6: rgb(233, 229, 229);
   --header-height: 60px;
   font-family: 'Oswald', sans-serif;
   background-color: var(--color4);
