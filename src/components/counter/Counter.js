@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Counter() {
-  return <div>counter</div>;
-}
+import './Counter.css';
 
-export default Counter;
+export default function Counter() {
+  return <div>Counter</div>;
+}

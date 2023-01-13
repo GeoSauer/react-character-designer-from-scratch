@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Controls() {
-  return <div>controls</div>;
-}
+import './Controls.css';
 
-export default Controls;
+export default function Controls() {
+  return <div>Controls</div>;
+}

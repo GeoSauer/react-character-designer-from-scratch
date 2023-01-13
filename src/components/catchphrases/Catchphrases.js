@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Catchphrases() {
+import './Catchphrases.css';
+
+export default function Catchphrases() {
   return <div>Catchphrases</div>;
 }
-
-export default Catchphrases;
