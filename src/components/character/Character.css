@@ -1,0 +1,23 @@
+.character {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr 2fr;
+  height: 700px;
+  width: 200px;
+}
+
+/* TODO figure out how to do this part */
+/* element.style {
+    background-image: url(./something-head.png);
+} */
+
+.display {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div {
+  /* TODO remove border */
+  border: 1px solid red;
+  display: block;
+}
