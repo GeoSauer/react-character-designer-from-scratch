@@ -11,7 +11,7 @@ export default function Main() {
   const [head, setHead] = useState('chewbacca');
   const [body, setBody] = useState('hawaiian-shirt');
   const [pants, setPants] = useState('bottom');
-  const [phrase, setPhrase] = useState([]);
+  const [phrases, setPhrases] = useState([]);
   const [headCount, setHeadCount] = useState(0);
   const [bodyCount, setBodyCount] = useState(0);
   const [pantsCount, setPantsCount] = useState(0);
@@ -28,15 +28,15 @@ export default function Main() {
               setBody,
               pants,
               setPants,
-              phrase,
-              setPhrase,
+              phrases,
+              setPhrases,
               setHeadCount,
               setBodyCount,
               setPantsCount,
             }}
           />
           <Counter {...{ headCount, bodyCount, pantsCount }} />
-          <Catchphrases {...{ phrase }} />
+          <Catchphrases {...{ phrases }} />
         </div>
         <div className="right">
           <Character {...{ head, body, pants }} />

@@ -9,7 +9,7 @@ export default function Controls({
   setBody,
   pants,
   setPants,
-  setPhrase,
+  setPhrases,
   setHeadCount,
   setBodyCount,
   setPantsCount,
@@ -17,7 +17,7 @@ export default function Controls({
   const [phraseInput, setPhraseInput] = useState('');
 
   const submitPhrase = () => {
-    setPhrase((currentState) => [...currentState, phraseInput]);
+    setPhrases((currentState) => [...currentState, phraseInput]);
     setPhraseInput('');
   };
 
