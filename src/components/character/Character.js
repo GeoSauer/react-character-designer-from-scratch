@@ -11,7 +11,7 @@ export default function Character({ head, body, pants }) {
       <div className="display body">
         <img src={`/Body/${body}.png`} />
       </div>
-      <div className="display pants">
+      <div className="display">
         <img src={`/Pants/${pants}.png`} />
       </div>
     </div>

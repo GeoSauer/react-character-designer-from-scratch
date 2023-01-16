@@ -3,9 +3,9 @@ import { React, useState } from 'react';
 import Character from '../character/Character';
 import Controls from '../controls/Controls';
 import Counter from '../counter/Counter';
-import Catchphrases from '../catchphrases/Catchphrases';
 
 import './Main.css';
+import background from '../../background.jpeg';
 
 export default function Main() {
   const [head, setHead] = useState('chewbacca');
@@ -17,26 +17,27 @@ export default function Main() {
   const [pantsCount, setPantsCount] = useState(0);
 
   return (
-    <main>
+    <main style={{ backgroundImage: `url(${background})` }}>
       <section className="container">
         <div className="left">
-          <Controls
-            {...{
-              head,
-              setHead,
-              body,
-              setBody,
-              pants,
-              setPants,
-              phrases,
-              setPhrases,
-              setHeadCount,
-              setBodyCount,
-              setPantsCount,
-            }}
-          />
-          <Counter {...{ headCount, bodyCount, pantsCount }} />
-          <Catchphrases {...{ phrases }} />
+          <div className="editor">
+            <Controls
+              {...{
+                head,
+                setHead,
+                body,
+                setBody,
+                pants,
+                setPants,
+                phrases,
+                setPhrases,
+                setHeadCount,
+                setBodyCount,
+                setPantsCount,
+              }}
+            />
+            <Counter {...{ headCount, bodyCount, pantsCount, phrases }} />
+          </div>
         </div>
         <div className="right">
           <Character {...{ head, body, pants }} />

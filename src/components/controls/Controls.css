@@ -12,11 +12,12 @@ button {
 .editor,
 .counter,
 .catchphrases,
-.catchphrases-container,
+/* .catchphrases-container, */
 button,
 select,
 input,
 label {
+  display: grid;
   margin-left: 20px;
   width: 70%;
 }

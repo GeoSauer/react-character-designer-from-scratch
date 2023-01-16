@@ -1,16 +1,18 @@
 .character {
-  display: grid;
-  grid-template-rows: 1.5fr 2fr 2fr;
-  height: 700px;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 img {
-  width: 190px;
-  height: 200px;
+  width: 200px;
 }
-/* .display {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
+
+.body {
+  margin-top: -10px;
+}
+
+.head {
+  margin-bottom: -10px;
+  z-index: 1;
+}

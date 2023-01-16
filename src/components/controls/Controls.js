@@ -17,7 +17,8 @@ export default function Controls({
   const [phraseInput, setPhraseInput] = useState('');
 
   const submitPhrase = () => {
-    setPhrases((currentState) => [...currentState, phraseInput]);
+    // if (phraseInput === '') return;
+    phraseInput && setPhrases((currentState) => [...currentState, phraseInput]);
     setPhraseInput('');
   };
 
@@ -41,7 +42,7 @@ export default function Controls({
   };
 
   return (
-    <div className="editor">
+    <div>
       <div className="form-control">
         <label htmlFor="head">Head</label>
         <select value={head} onChange={newHead}>
@@ -72,7 +73,6 @@ export default function Controls({
           type="text"
           value={phraseInput}
           onChange={(event) => setPhraseInput(event.target.value)}
-          required
         />
         <button onClick={submitPhrase}>ADD</button>
       </div>
