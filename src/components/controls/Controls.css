@@ -1,0 +1,44 @@
+button {
+  background-color: var(--color1);
+  border: none;
+  border-radius: 20px;
+  color: var(--color6);
+  display: block;
+  font-weight: 700;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.editor,
+.counter,
+.catchphrases,
+/* .catchphrases-container, */
+button,
+select,
+input,
+label {
+  display: grid;
+  margin-left: 20px;
+  width: 70%;
+}
+
+.form-control {
+  margin-top: 20px;
+}
+
+input,
+select {
+  background-color: var(--color6);
+  border-color: var(--color1);
+  border-radius: 5px;
+  height: 30px;
+}
+
+label {
+  cursor: default;
+  display: block;
+  font-weight: 700;
+  left: 0;
+  text-transform: uppercase;
+  top: 0;
+}
